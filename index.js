@@ -155,9 +155,14 @@ const interfaceController = (() => {
         btnReset.disabled = false;
         let player1Name = prompt("Introduzca el nombre del primer jugador.");
         let player2Name = prompt("Introduzca el nombre del segundo jugador.");
-        let jugador1 = Player(player1Name, "x");
-        let jugador2 = Player(player2Name, "o");
-        Game.begin(jugador1, jugador2);
+        if (player1Name !== "" && player2Name !== "") {
+            let jugador1 = Player(player1Name, "x");
+            let jugador2 = Player(player2Name, "o");
+            Game.begin(jugador1, jugador2);
+        }
+        else {
+            Game.begin();
+        }
+
     });
 })();
-
