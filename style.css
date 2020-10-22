@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gameContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 20rem;
+    height: 20rem;
+}
+.row{
+    margin: 1rem;
+}
+
+.gameRow{
+    display: flex;
+}
+.gameItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    height: 6.666rem;
+    width: 6.666rem;
+    background-color: white;
+    border: solid 1px black;
+    user-select: none;
+}
+
+.gameItem:hover{
+    cursor: pointer;
+    background-color: #DDDDDD;
+}
+
+.gameItem:active{
+    background-color: red;
+}
